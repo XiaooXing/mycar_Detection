@@ -21,6 +21,8 @@ markers[unknown==255] = 0
 markers = cv2.watershed(img,markers)
 img[markers == -1] = [255,0,0]
 
+11111111111111111111111111
+
 # 获取分割后的图像区域
 num_objects = len(np.unique(markers)) - 1
 object_imgs = []
